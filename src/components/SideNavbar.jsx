@@ -13,11 +13,11 @@ const SideNavLinks = [
   { name: "Home", link: "/", img: "bg-red-500" },
   { name: "Events", link: "/events", img: "bg-blue-500" },
   { name: "Team", link: "/team", img: "bg-green-500" },
-  { name: "Projects", link: "/projects", img: "bg-stone-500" },
-  { name: "Gallery", link: "/gallery", img: "bg-purple-500" },
   { name: "Newsletter", link: "/newsletter", img: "bg-pink-500" },
+  { name: "Gallery", link: "/gallery", img: "bg-purple-500" },
   { name: "Contact Us", link: "/contact", img: "bg-lime-500" },
-  { name: "FAQ", link: "/faq", img: "bg-yellow-500" },
+  { name: "Membership", link: "/membership", img: "bg-stone-500" },
+  { name: "FAQs", link: "/faq", img: "bg-yellow-500" },
 ];
 
 const Socials = [
@@ -55,11 +55,16 @@ function SideNavbar({ isOpen, setIsOpen }) {
             className={`hidden md:block ${navImage} rounded-2xl absolute inset-0`}
           ></motion.div>
           <div>
-            <button className="font-inter right-0 absolute" 
+            <button
+              className="font-inter right-0 absolute"
               onClick={() => {
                 setIsOpen(!isOpen);
                 setNavImage("bg-neutral-300");
-              }}> close </button>
+              }}
+            >
+              {" "}
+              close{" "}
+            </button>
             <span className="hidden md:block">
               <X
                 onClick={() => {
