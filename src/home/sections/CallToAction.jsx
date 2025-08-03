@@ -11,10 +11,7 @@ const CallToAction = () => {
 	const rotate = useTransform(scrollYProgress, [0.12, 1], [0, -8]);
 
 	return (
-		<div
-			ref={CTARef}
-			className="h-full md:py-20 w-full mx-auto px-max "
-		>
+		<div ref={CTARef} className="h-full md:py-20 w-full mx-auto px-max ">
 			<motion.div
 				style={{ rotate }}
 				className="bg-neutral-950 px-max font-semibold shadow-xl py-20 md:py-25  text-center relative rounded-2xl"
@@ -28,13 +25,13 @@ const CallToAction = () => {
 					student chapter
 				</h1>
 
-				<p className="text-neutral-500 py-8 text-xs font-normal md:text-lg max-w-7xl mx-auto" >
-					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere dolorem expedita consectetur incidunt recusandae! Consequatur molestias, nesciunt reiciendis quaerat iusto deserunt culpa. Doloribus, libero. Minima earum recusandae, eveniet, alias qui voluptates explicabo distinctio aliquam laudantium facilis perspiciatis! Sapiente animi quidem dolorem ipsum totam nostrum nam illum non, nulla, laboriosam quos!
+				<p className="text-neutral-500 py-8 text-xs font-normal md:text-lg max-w-7xl mx-auto">
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi voluptatem laudantium facilis magni dolor cum placeat odio error laborum soluta inventore consequuntur perspiciatis pariatur repudiandae sequi enim, libero dolorem optio.
 				</p>
 
 				<div className="flex justify-center mt-4 font-inter mx-auto bg-neutral-300 w-fit h-fit rounded-4xl relative">
 					<div className="w-fit text-neutral-800 font-normal bg-neutral-100 border-4 border-blue-500 hover:bg-blue-500 hover:text-neutral-100 rounded-4xl py-4 px-10 text-sm md:text-base cursor-pointer hover:scale-105 transition-all duration-200 ease-in-out shadow-2xl">
-						Join Our Chapter{" "}
+						See for Membership{" "}
 					</div>
 				</div>
 			</motion.div>
